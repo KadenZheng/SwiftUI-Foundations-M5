@@ -68,7 +68,8 @@ struct HomeViewRow: View {
                         Text(time)
                             .font(.caption)
                     }
-                }.padding(.leading, 20)
+                }.multilineTextAlignment(.leading)
+                .padding(.leading, 20)
             }
             .padding(/*@START_MENU_TOKEN@*/.horizontal, 20.0/*@END_MENU_TOKEN@*/)
         }
@@ -78,6 +79,6 @@ struct HomeViewRow: View {
 
 struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description", count: "10 Lessons", time: "2 Hours")
+        HomeViewRow(image: "swift", title: "Swift", description: "some description", count: "10 Lessons", time: "2 Hours")
     }
 }
